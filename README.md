@@ -1444,6 +1444,7 @@ names.forEach((name) {
 ####  break  and Labelled break
 
 **What is the `break` Statement?**
+
 Used to  immediately terminate a loop (`for`, `while`, `do-while`) or a `switch` case.
 -   **In switch:** Stops execution of the current case and exits the switch block.
 -   **In loops:** Exits the loop even if the loop condition is still true. 
@@ -1479,6 +1480,7 @@ for (int i = 1; i <= 3; i++) {
 ```
 
 **Labelled `break` in Dart**
+
 Used to exit a specific loop in a nested loop structure.
 -   **How it works:**
     1.  Define a **label** before the target loop, ending with a colon (e.g., `outerLoop:`)
