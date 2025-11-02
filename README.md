@@ -1,7 +1,7 @@
 # Core Dart
 
 ## Introduction
-Dart is a modern, open-source programming language developed by Google in 2011. It was designed for building fast, scalable, and cross-platform applications, particularly for the web, mobile, and desktop. Initially focused on replacing JavaScript for web development, Dart gained significant popularity after the introduction of Flutter, Google’s UI toolkit for creating natively compiled applications from a single codebase. Dart is object-oriented, class-based, and uses a C-style syntax, making it familiar to developers from Java or JavaScript backgrounds. Key features of Dart include sound typing, asynchronous programming with `_async_` and `_await_`, garbage collection, just-in-time and ahead-of-time compilation, and a rich standard library. Its ability to compile to native code and JavaScript makes it versatile and efficient for both frontend and backend development.
+Dart is a modern, open-source programming language developed by Google in 2011. It was designed for building fast, scalable, and cross-platform applications, particularly for the web, mobile, and desktop. Initially focused on replacing JavaScript for web development, Dart gained significant popularity after the introduction of Flutter, Google’s UI toolkit for creating natively compiled applications from a single codebase. Dart is object-oriented, class-based, and uses a C-style syntax, making it familiar to developers from Java or JavaScript backgrounds. Key features of Dart include sound typing, asynchronous programming with `async` and `await`, garbage collection, just-in-time and ahead-of-time compilation, and a rich standard library. Its ability to compile to native code and JavaScript makes it versatile and efficient for both frontend and backend development.
 
 **Development & Deployment**
 | Platform | Development | Deployment |
@@ -113,6 +113,7 @@ print(now);
 Here now gets its value only when the program runs.
 
 **const**
+
 Meaning: A compile-time constant.
 When value is set: At compile time (before the program runs).
 Flexibility: Must be a fixed, immutable value known during compilation.
@@ -1004,6 +1005,7 @@ class Person {
 **Cascade Notation Operators**
 
 `..` Used to perform multiple method calls or property assignments on the same object.
+
 `..?` Used to perform multiple operations on an object only if it is not null. Prevents null reference errors
 ``` dart
 void main() {
@@ -1029,7 +1031,7 @@ class Person {
 
 ## Null safety in Dart
 
-Null safety is a Dart 2.12+ feature (since July 2020) that prevents variables from holding `null` values by default , ensuring fewer runtime errors. Null safety only available for variable declared with type annotation. Variable declared with `var` and `dynamic` keyword can be `null`.
+Null safety is a Dart 2.12+ feature (since July 2020) that prevents variables from holding `null` values by default , ensuring fewer runtime errors. Null safety only available for variable declared with type annotations. Variables declared with `var` and `dynamic` keywords can be `null`.
 ``` dart
 void main() {
   String name = 'Arnab'; // Non-nullable
@@ -1051,10 +1053,10 @@ void main() {
 }
 ```
 
-The value of non-nullable variable can be assigned to nullable variable but the value of nullable variable can not be assigned to to non-nullable variable.
+The value of a non-nullable variable can be assigned to a nullable variable, but the value ofa  nullable variable can not be assigned to to non-nullable variable.
 ``` dart
 void doSomething(int y) {
-  // do comething
+  // do something
 }
 
 void main() {
@@ -1099,6 +1101,7 @@ void main() {
 ```
 
 **Null Assertion Operator (!)**
+
 By using this I am telling the compiler that the variable absolutely going to have a value.
 ``` dart
 void main() {
@@ -1118,6 +1121,7 @@ If `name` were null, the code would throw a **runtime error**.
 
   
 **Null Aware Access Operator (?)**
+
 I am telling the compiler if the variable is not null then do your task either show null.
 ``` dart
 void main() {
@@ -1129,6 +1133,7 @@ void main() {
 ```
 
 **The `late` Keyword**
+
 `late`  allows you to declare a **non-nullable variable** that is **initialized later**, before use. I am telling the compiler that at this time I do not know the value of the declared variable but it is up to me to initialize the variable before it can be used. Throws _LateInitializationError_ if the variable is not initialized.
 
 ***Late Initialization in a Class***
@@ -1331,8 +1336,9 @@ switch (day) {
 ### while Loop (Entry Control Loop)
 
 Type: Entry Control Loop - condition checked before the loop body.
-Execution: The loop body executes only if the condition is initially true.
-If the condition is false from the start, the body does not run.
+
+Execution: The loop body executes only if the condition is initially true. If the condition is false from the start, the body does not run.
+
 Condition: Must be a Boolean expression (true or false).
 ``` dart
 int i = 1;
@@ -1345,8 +1351,11 @@ while (i <= 3) {
 
 ### do-while Loop (Exit Control Loop)
 Type: Exit Control Loop - condition checked after executing the loop body.
+
 Execution: The loop body runs first, then the condition is checked.
+
 Key Feature: Guaranteed to execute at least once, regardless of the condition.
+
 Syntax Note: Must include a semicolon (;) at the end of the while condition.
 ``` dart
 int i = 1;
@@ -1365,11 +1374,9 @@ do {
 | Guaranteed Execution | May execute 0 or more times | Executes at least once |
 
 
-  
-
-In short:
-Use  `while`  when you want the loop to run only if a condition is true from the start.  
-Use `do-while` when you need the loop to run at least once , regardless of the initial condition.
+**In short:**
+- Use  `while`  when you want the loop to run only if a condition is true from the start.  
+- Use `do-while` when you need the loop to run at least once, regardless of the initial condition.
 
 | while | do-while |
 | --- | --- |
@@ -1479,14 +1486,14 @@ for (int i = 1; i <= 3; i++) {
 // i: 3, j: 1
 ```
 
-**Labelled `break` in Dart**
+**Labeled `break` in Dart**
 
 Used to exit a specific loop in a nested loop structure.
 -   **How it works:**
     1.  Define a **label** before the target loop, ending with a colon (e.g., `outerLoop:`)
     2.  Use `break` followed by that label name (e.g., `break outerLoop;`).
         
--   **Result:** Control exits the **labelled loop**, skipping any remaining iterations.
+-   **Result:** Control exits the **labeled loop**, skipping any remaining iterations.
     
 ``` dart
 outerLoop: // label for the outer loop
@@ -1502,9 +1509,9 @@ for (int i = 1; i <= 3; i++) {
 // i: 1, j: 1
 ```
 
-| Feature | Regular break | Labelled break |
+| Feature | Regular break | Labeled break |
 | --- | --- | --- |
-| Scope | Innermost loop only | Any labelled outer loop |
+| Scope | Innermost loop only | Any labeled outer loop |
 | Use Case | Stop one loop | Exit multiple nested loops |
 | Syntax Example | `break;` | `break outerLoop;` |
 | Label Needed | No | Yes |
@@ -1512,10 +1519,10 @@ for (int i = 1; i <= 3; i++) {
 
 **In short:**
 -   Use `break` for normal loop exits.
--   Use **labelled** `break` to exit **outer loops** directly in nested structures.
+-   Use **labeled** `break` to exit **outer loops** directly in nested structures.
     
 
-#### continue and Labelled continue
+#### continue and Labeled continue
 
 **What is the continue Statement?**
 Used to skip the current iteration of a loop and move to the next one.
@@ -1537,7 +1544,7 @@ for (int i = 1; i <= 7; i++) {
 // Output: 1, 2, 3, 5, 6
 ```
 
-**Labelled continue in Dart**
+**Labeled continue in Dart**
 Used to control which loop continues in nested loops.
 Purpose: Skips the current iteration of an outer loop from inside an inner loop.
 
@@ -1693,6 +1700,7 @@ Functions are also categorized into four types based on their use of parameters 
   
 
 **Callback function**
+
 A callback function in Dart is a function passed as an argument to another function, which is invoked later when a certain event or operation completes. It allows asynchronous or event-driven programming by letting one piece of code execute after another finishes.
 A callback is simply a function reference used as a parameter.
 ``` dart
@@ -1712,7 +1720,7 @@ void processData(String data) {
 
 **Why Use Callbacks**
 - To execute code after a task completes (e.g., async operations, UI updates).
-- To customize behavior of a function from outside (reusable APIs).
+- To customize the behavior of a function from outside (reusable APIs).
 - Common in Flutter widgets, event handlers, and network requests.
 ``` dart
 // Simulated DB query function
@@ -1765,6 +1773,7 @@ execute(() => print("Hi there!"));
 ```
 
 **Anonymous (Lambda) Functions**
+
 An anonymous function is a function without a name. It is used for short, self-contained operations, often passed as an argument to another function.
 ``` dart
 (parameterList) {
@@ -1801,7 +1810,8 @@ void main() {
 ```
 Commonly used with higher-order functions like `.forEach()` or `.map()`.
 
-**Lambda (Arrow) Function **
+**Lambda (Arrow) Function**
+
 When the function body has a single expression:
 ``` dart
 (int n) => n * n * n;
@@ -1817,6 +1827,7 @@ Equivalent to:
 - Simplifies code where a named function is unnecessary.
 
 **Arrow Function**
+
 The Arrow Function (or Fat Arrow Notation (`=>`)) is a shorthand notation for defining functions in Dart that contain only a single statement or single expression.
 
 _Rules and Syntax_
@@ -1832,6 +1843,7 @@ The Notation: The symbol is `=>` (equals sign followed by a greater-than sign).
 **Usage:** It can be applied to both normal functions and anonymous (lambda) functions.
 
 **Recursion**
+
 Recursion is a process where a function calls itself repeatedly. A function that does this is known as a recursive function . Recursion is typically used when a problem can be naturally defined in terms of itself, such as calculating a factorial (e.g., 5! = 4! x 5).
 ``` dart
 int factorial(int n) {
