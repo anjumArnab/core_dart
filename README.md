@@ -103,7 +103,9 @@ print(x.toUpperCase()); // exception
 **final**
 
 Meaning: Can only be assigned once.
+
 When value is set: At run time (when the program runs).
+
 Flexibility: The value can be calculated dynamically (not known at compile time).
 Example:
 ``` dart
@@ -115,7 +117,9 @@ Here now gets its value only when the program runs.
 **const**
 
 Meaning: A compile-time constant.
+
 When value is set: At compile time (before the program runs).
+
 Flexibility: Must be a fixed, immutable value known during compilation.
 Example:
 ``` dart
@@ -134,6 +138,7 @@ Multiline comment
 ## Data types
 
 Single value type: Numbers (integers and doubles), Strings, Booleans
+
 Multi value type: List, Set, Map, Enum
 ### int
 Used to represent whole numbers
