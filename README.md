@@ -140,9 +140,7 @@ Single value type: Numbers (integers and doubles), Strings, Booleans
 
 Multi value type: List, Set, Map, Enum
 ### int
-Used to represent whole numbers
-On native platforms, values can be from -263 to 263 – 1
-On the web, it is represented as JavaScript numbers (64 bit floating point values with no fractional part)
+Used to represent whole numbers. On native platforms, values can be from -263 to 263 – 1. On the web, it is represented as JavaScript numbers (64-bit floating point values with no fractional part).
 ``` dart
 void main() {
   int x = 5;
@@ -179,8 +177,7 @@ void main() {
 
 ### double
 
-Used to represent fractional numbers
-Supports 64 bit as specified by the IEEE 754 standard
+Used to represent fractional numbers. Supports 64-bit as specified by the IEEE 754 standard.
 ``` dart
 void main() {
   double y = 5.75;
