@@ -266,11 +266,16 @@ void main() {
 ```
 
 ### List
-Ordered collection of index based values
-Index starts from zero
-Duplicate elements are allowed
-Supports generics. Allow same & different types of values
+Ordered collection of index-based values.
+
+The index starts from zero.
+
+Duplicate elements are allowed.
+
+Supports generics. Allow same & different types of values.
+
 Can be growable  ```var values = []```, ```var values = List.empty(growable: true)``` or fixed length list ```var values = List.empty(_)```
+
 Implements iterable
 ``` dart
 void main() {
