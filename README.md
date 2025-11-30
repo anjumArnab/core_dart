@@ -9,9 +9,9 @@ Dart is a modern, open-source programming language developed by Google in 2011. 
 | Desktop & Mobile | JIT + DVM | AOT + runtime |
 | Web | dartdevc | dart2js |
  
-**JIT compilation:**  compiles the program’s source code into machine code **at runtime** (while the program is running). It allows **faster development cycles** since changes can be tested immediately without full recompilation. JIT is mainly used during **development** for features like **hot reload** in Flutter. However, it can cause slightly slower startup times because compilation happens on the device.
+**JIT compilation:**  Compiles the program’s source code into machine code **at runtime** (while the program is running). It allows **faster development cycles** since changes can be tested immediately without full recompilation. JIT is mainly used during **development** for features like **hot reload** in Flutter. However, it can cause slightly slower startup times because compilation happens on the device.
   
-**AOT compilation:** converts the source code into **native machine code before execution**. This makes the app **run faster** and **start instantly**, since no compilation occurs at runtime. AOT is used for **production builds** in Flutter to deliver high performance and optimized executables. The trade-off is longer build times during compilation and larger binary sizes.
+**AOT compilation:** Converts the source code into **native machine code before execution**. This makes the app **run faster** and **start instantly**, since no compilation occurs at runtime. AOT is used for **production builds** in Flutter to deliver high performance and optimized executables. The trade-off is longer build times during compilation and larger binary sizes.
 
 **Compile Time:** The phase when your code is translated from a high-level language (like Dart, C, or Java) into machine-readable code (binary or intermediate form). It happens before the program is executed. Tasks that happen here:
 -   Syntax checking (missing semicolon, wrong keyword, etc.)
