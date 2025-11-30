@@ -42,7 +42,7 @@ Examples:
 ## Variables
 
 -   Used to store data
--   Stores reference of an object
+-   Stores the reference of an object
  
 ### Creating variables
 
@@ -71,7 +71,7 @@ dynamic values;
 | Type inference at compile-time. | Type inference at run-time. |
 | var is not a stand-alone type. | dynamic is a stand-alone type. |
 | Static type checking with Dart analyzer. Gives compile-time errors. | Stops analyzer & runtime type checking. Throws runtime exceptions. |
-| Use when the type is clear and consistent. | Use when type is unknown, e.g., JSON parsing. |
+| Use when the type is clear and consistent. | Use when the type is unknown, e.g., JSON parsing. |
 
 ``` dart
 void main() {
@@ -108,7 +108,6 @@ Meaning: Can only be assigned once.
 When value is set: At run time (when the program runs).
 
 Flexibility: The value can be calculated dynamically (not known at compile time).
-Example:
 ``` dart
 final DateTime now = DateTime.now(); // valid
 print(now);
@@ -122,7 +121,6 @@ Meaning: A compile-time constant.
 When value is set: At compile time (before the program runs).
 
 Flexibility: Must be a fixed, immutable value known during compilation.
-Example:
 ``` dart
 const pi = 3.1416; // valid
 const time = DateTime.now(); // ERROR (not known at compile time)
