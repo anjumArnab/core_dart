@@ -17,6 +17,7 @@ Dart is a modern, open-source programming language developed by Google in 2011. 
 -   Syntax checking (missing semicolon, wrong keyword, etc.)
 -   Type checking (e.g., assigning a _String_ to an _int_ variable in strongly typed languages)
 -   Converting source code into executable code or bytecode
+
 Errors found: Compile-time errors
 
 Examples:
