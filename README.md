@@ -235,7 +235,8 @@ void main() {
   print(s.toLowerCase()); // "hello world"
   print(s.contains("World")); // true
   print(s.startsWith("Hello")); // true
-  print(s.endsWith("ld")); // trueprint(s.indexOf("o")); // 4
+  print(s.endsWith("ld")); // true
+  print(s.indexOf("o")); // 4
   print(s.lastIndexOf("o")); // 7
   print(s.substring(0, 5)); // "Hello"
   print(s.replaceAll("l", "*")); // "He**o Wor*d"
