@@ -1523,10 +1523,14 @@ for (int i = 1; i <= 3; i++) {
 
 #### continue and Labeled continue
 
-**What is the continue Statement?**
+**What is the `continue` Statement?**
+
 Used to skip the current iteration of a loop and move to the next one.
+
 Behavior: When executed, all remaining statements in the current iteration are skipped.
+
 Control Flow: Execution jumps to the start of the loop for the next iteration.
+
 Scope: Valid only inside loops (for, while, or do-while).
 
 **Regular continue in Loops**
