@@ -1616,10 +1616,11 @@ void main() {
 **Structure of a Dart Function**
 
 **1. Function Header**
-Return Type: Type of value returned (int, String, void, etc.).
-Function Name: Identifier used to call the function.
-Parameter List: Inputs passed to the function.
-void: Used if the function returns nothing.
+
+Return Type: Type of value returned (int, String, void, etc.). 
+Function Name: Identifier used to call the function. 
+Parameter List: Inputs passed to the function. 
+void: Used if the function returns nothing. 
 
 **2. Function Body**
 Enclosed in {} - contains executable statements.
@@ -1664,7 +1665,6 @@ void main() {
 | void Keyword | Used for functions without return values |
 | Function vs. Method | Outside class vs. Inside class |
 | Execution Flow | Caller > Called > Return > Resume |
-  
 
 Positional parameters are assigned by order in the function call and are required unless explicitly made optional. Optional positional parameters are placed inside brackets`[]` and must be nullable if no value is provided. Only the right-most positional parameters can be optional. To avoid `null`, you can assign default values, but default values apply only to optional positional parameters. Named parameters, defined inside`{}`, let you pass arguments in any order using `name: value`. Named parameters are optional by default and get`null` if no value is passed unless a default value is assigned. You can force a named parameter to be required by using the`required` keyword. When combining both, positional parameters must come before named parameters.
 ``` dart
