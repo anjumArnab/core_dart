@@ -1052,7 +1052,7 @@ void main() {
 }
 ```
 
-The value of a non-nullable variable can be assigned to a nullable variable, but the value ofa  nullable variable can not be assigned to to non-nullable variable.
+The value of a non-nullable variable can be assigned to a nullable variable, but the value of a  nullable variable can not be assigned to a non-nullable variable.
 ``` dart
 void doSomething(int y) {
   // do something
