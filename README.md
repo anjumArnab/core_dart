@@ -331,7 +331,7 @@ void main() {
   print(numbers); // [1, 2, 3, 4, 5, 6]
 }
 ```
-- Spread Operator: Use ... to insert all elements from one list into another easily.
+- Spread Operator: Use ... to insert all elements from one list into another easily. It checks type mismatch at compile time.
 ``` dart
 void main() {
   List<int> a = [1, 2, 3];
