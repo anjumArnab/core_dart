@@ -1791,6 +1791,7 @@ Body enclosed in {}.
 Ends with a semicolon (;).
 
 **Execution Methods**
+
 _Assign to a variable_
 ``` dart
 void main() {
@@ -1815,17 +1816,6 @@ void main() {
 ```
 Commonly used with higher-order functions like `.forEach()` or `.map()`.
 
-**Lambda (Arrow) Function**
-
-When the function body has a single expression:
-``` dart
-(int n) => n * n * n;
-```
-Equivalent to:
-``` dart
-(int n) { return n * n * n; };
-```
-
 **Use Cases**
 - Compact event handlers or callbacks.
 - Inline logic for iteration or filtering.
@@ -1836,20 +1826,20 @@ Equivalent to:
 The Arrow Function (or Fat Arrow Notation (`=>`)) is a shorthand notation for defining functions in Dart that contain only a single statement or single expression.
 
 _Rules and Syntax_
-- Single Expression Only: This notation can only be used when the function body has one expression that can be evaluated. It cannot be used for functions containing multi-statement logic like if/else or loops.
+- Single Expression Only: This notation can only be used when the function body has one expression that can be evaluated. It cannot be used for functions containing multi-statement logic, like if/else or loops.
 ``` dart
 returnType functionName(parameters) => expression;
 int add(int a, int b) => a + b; // valid
 ```
 The Notation: The symbol is `=>` (equals sign followed by a greater-than sign).
 
-- No Brackets or return: You remove the curly brackets ({}) and the return keyword. The `=>` implicitly handles the return of the expression's result.
+- No Brackets or return: You remove the curly brackets `{}` and the return keyword. The `=>` operator implicitly returns the expression's result.
 
 **Usage:** It can be applied to both normal functions and anonymous (lambda) functions.
 
 **Recursion**
 
-Recursion is a process where a function calls itself repeatedly. A function that does this is known as a recursive function . Recursion is typically used when a problem can be naturally defined in terms of itself, such as calculating a factorial (e.g., 5! = 4! x 5).
+Recursion is a process where a function calls itself repeatedly. A function that does this is known as a recursive function. Recursion is typically used when a problem can be naturally defined in terms of itself, such as calculating a factorial (e.g., 5! = 4! x 5).
 ``` dart
 int factorial(int n) {
   if (n == 1) return 1; // Base case
@@ -1863,5 +1853,5 @@ void main() {
 
 | Component | Description |
 | --- | --- |
-| Recursive Call | The statement inside the function where it calls itself, usually with a modified input (e.g., `getFactorial(n-1)`). |
+| Recursive Call | The statement inside the function calls itself, usually with a modified input (e.g., `getFactorial(n-1)`). |
 | Base Case | An `if` condition that defines the termination point. When met (e.g., `n == 1`), the function returns a simple value and stops the process. |
