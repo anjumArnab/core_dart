@@ -1584,6 +1584,7 @@ for (int i = 1; i <= 3; i++) {
 
 ## Function
 A function is a reusable block of code that performs a specific task.
+
 Input/Output: Accepts input, processes it, and may return output.
 
 **Benefits:**
@@ -1592,7 +1593,7 @@ Input/Output: Accepts input, processes it, and may return output.
 - Improves readability and maintenance.
   
 **Functions as Objects in Dart**
-- Functions are first-class objects, meaning they can:
+Functions are first-class objects, meaning they can:
 - Be stored in variables.
 - Be passed as arguments to other functions.
 - Be returned from other functions.
