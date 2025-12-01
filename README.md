@@ -1593,6 +1593,7 @@ Input/Output: Accepts input, processes it, and may return output.
 - Improves readability and maintenance.
   
 **Functions as Objects in Dart**
+
 Functions are first-class objects, meaning they can:
 - Be stored in variables.
 - Be passed as arguments to other functions.
