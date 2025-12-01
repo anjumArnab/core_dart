@@ -1617,14 +1617,16 @@ void main() {
 
 **1. Function Header**
 
-Return Type: Type of value returned (int, String, void, etc.). 
-Function Name: Identifier used to call the function. 
-Parameter List: Inputs passed to the function. 
+Return Type: Type of value returned (int, String, void, etc.).
+
+Function Name: Identifier used to call the function.
+
+Parameter List: Inputs passed to the function.
+
 void: Used if the function returns nothing. 
 
 **2. Function Body**
-Enclosed in {} - contains executable statements.
-Ends with a return statement if a value is returned.
+Enclosed in {} - contains executable statements. Ends with a return statement if a value is returned.
 ``` dart
 int add(int a, int b) {
   return a + b;
@@ -1704,7 +1706,7 @@ Functions are also categorized into four types based on their use of parameters 
 
 **Callback function**
 
-A callback function in Dart is a function passed as an argument to another function, which is invoked later when a certain event or operation completes. It allows asynchronous or event-driven programming by letting one piece of code execute after another finishes.
+A callback function in Dart is a function passed as an argument to another function, which is invoked later when a certain event or operation completes. It enables asynchronous or event-driven programming by allowing one piece of code to execute after another finishes.
 A callback is simply a function reference used as a parameter.
 ``` dart
 void main() {
