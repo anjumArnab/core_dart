@@ -883,6 +883,7 @@ void main() {
   
 
 **Relational Operators**
+
 Used for comparison; result is always `bool`.
 ``` dart
 void main() {
@@ -1004,7 +1005,7 @@ class Person {
 
 `..` Used to perform multiple method calls or property assignments on the same object.
 
-`..?` Used to perform multiple operations on an object only if it is not null. Prevents null reference errors
+`..?` Used to perform multiple operations on an object only if it is not null. Prevents null reference errors.
 ``` dart
 void main() {
   var list = [10, 20, 30];
