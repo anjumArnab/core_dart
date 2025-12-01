@@ -33,6 +33,7 @@ Tasks that happen here:
 -   Executing logic, loops, conditions, etc.
 
 Errors found: Run-time errors
+
 Examples:
 - Dividing by zero (10 / 0)
 - Accessing an invalid array index
